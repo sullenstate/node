@@ -1,0 +1,31 @@
+extends layout
+
+block content
+	h1 Hello Boulder!
+	p I am a paragraph
+	h3= counter
+
+block moreContent
+	h2 Howdy!
+	h4 #{counter} visitors since last app start!
+
+block evenMoreContent
+	h2 Best foods!
+
+	ul
+		for foodItem in foods
+			if foodItem.name === 'pineapple'
+				li= foodItem.name
+			else
+				li Ugh!
+
+	form(action="/submit", method="POST")
+		input(name="name")
+		input(type="submit")
+
+	mixin foodList(food)
+		li #{food.name}
+
+	ul
+		for foodItem in foods
+			+foodList(foodItem)

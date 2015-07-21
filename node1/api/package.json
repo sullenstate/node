@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "description": "Web Colors API",
+  "main": "color.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "request": "~2.59.0"
+  }
+}

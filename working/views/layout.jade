@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset="utf-8")
+		title Untitled
+
+	body
+		block content
+
+		div
+
+			block moreContent
+
+		p This is a paragraph
+
+		ul
+			li Item #1
+			li Item #2
+			li Item #3
+
+		div#hello.test Test
+
+		div.test#id
+			div
+				div
+					div
+						| Test2
+
+		form(action="/formSubmit", method="POST").formTest
+			input(name="food")
+			input(type="submit")
+
+		block evenMoreContent
