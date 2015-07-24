@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1 Welcome to the Food House 
+
+	for food in foodieFoods
+		.food-item
+			a(href='/foods/#{food.slug}')
+				h2 #{food.name}
+			p This food is #{food.flavor.toLowerCase()}
+			a(href="/foods/#{food.slug}/delete") Delete #{food.name}

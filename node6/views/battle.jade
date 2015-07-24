@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1 Watch each video, then vote for you favorite!
+
+	for video in battle
+		.container
+			h2 #{video.description}
+			.videoWrapper
+				iframe(src="https://www.youtube.com/embed/#{video.url.slice(-11)}" frameborder="0" allowfullscreen)
+			p Submitted by #{video.name}
+			a.btn.btn-default.btn-block.btn-success(href="/voting" role="button") Vote for "#{video.title}"!

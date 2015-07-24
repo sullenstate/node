@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1 Please submit your entry here!
+
+	form(action="/formSubmit", method="POST")
+		input(name="name", type="text", placeholder='Name')
+		input(name="url", type="text", placeholder='Video URL')
+		input(name="title", type="text", placeholder='Video Title')
+		input(name="description", type="text", placeholder="Video Description")
+		input(type="submit")

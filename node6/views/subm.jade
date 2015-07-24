@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	h1 Here are your 4 submissions!:
+
+	for submission in submissions
+		.container
+			h2 #{submission.description}
+			.videoWrapper
+				iframe(src="https://www.youtube.com/embed/#{submission.url.slice(-11)}" frameborder="0" allowfullscreen)
+			p Submitted by #{submission.name}
+
+	a.btn.btn-default.btn-block.btn-success(href="/voting" role="button") Take me to the voting!

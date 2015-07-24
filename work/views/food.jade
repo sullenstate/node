@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1 The #{food.name} Page!
+	p So #{food.flavor.toLowerCase()}...
+
+	.image
+		img(src="#{food.image}")
