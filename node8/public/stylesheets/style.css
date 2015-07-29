@@ -1,0 +1,12 @@
+body {
+  font: 14px "Helvetica-Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h4.applicant {
+	display: inline-block;
+	margin-left: 20px;
+}

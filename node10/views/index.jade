@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	.contain
+		form.searchForm
+			input.search.hidden(name="str" type="text" placeholder="Search for...")
+			input.btn.btn-default.search.hidden(role="button" type="submit" value="Search")
+
+		a.btn.btn-default.load(role="button") Load Countries
+	
+	ul#country-list
